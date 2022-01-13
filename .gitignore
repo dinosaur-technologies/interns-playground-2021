@@ -1,0 +1,10 @@
+.env*
+!.env.example
+node_modules
+dist
+yarn-error.log
+prisma/dbml
+data
+logs
+src/secrets/*
+src/secrets/!.gitkeep

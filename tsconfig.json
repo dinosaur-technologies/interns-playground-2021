@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "allowJs": true,
+    "lib": ["ES6", "DOM"],
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "incremental": true,
+    "paths": {
+      "@servers/*": ["./servers/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@enums/*": ["./enums/*"],
+      "@exceptions/*": ["./exceptions/*"],
+      "@interfaces/*": ["./interfaces/*"],
+      "@middlewares/*": ["./middlewares/*"],
+      "@models/*": ["./models/*"],
+      "@providers/*": ["./providers/*"],
+      "@repositories/*": ["./repositories/*"],
+      "@secrets/*": ["./secrets/*"],
+      "@services/*": ["./services/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
