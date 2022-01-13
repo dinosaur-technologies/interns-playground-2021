@@ -1,10 +1,19 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
+<<<<<<< HEAD
+=======
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+>>>>>>> ebed19bd45be901eec43898ea0e732acf85d751e
 generator client {
   provider = "prisma-client-js"
 }
 
+<<<<<<< HEAD
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
@@ -19,3 +28,41 @@ model User {
   updatedAt DateTime
   verifiedAt DateTime
 }
+=======
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+enum Provider {
+  EMAIL
+  FACEBOOK
+  GOOGLE
+}
+
+enum Role {
+  ADMIN
+  BUSINESS
+  STAFF
+  KITCHEN
+  CUSTOMER
+}
+
+enum Subscription {
+  FREE
+  BASIC
+  BUSINESS
+}
+
+model Account {
+  ID          String   @unique
+  displayName String?
+  imageURL    String?
+  email       String   @unique
+  password    String?
+  provider    Provider @default(EMAIL)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now()) @updatedAt
+
+  @@index([ID, email, createdAt, updatedAt])
+}
+>>>>>>> ebed19bd45be901eec43898ea0e732acf85d751e

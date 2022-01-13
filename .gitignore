@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 node_modules
 
 .env
 
 yarn-error.log
+=======
+.env*
+!.env.example
+node_modules
+dist
+yarn-error.log
+prisma/dbml
+data
+logs
+src/secrets/*
+src/secrets/!.gitkeep
+>>>>>>> ebed19bd45be901eec43898ea0e732acf85d751e
