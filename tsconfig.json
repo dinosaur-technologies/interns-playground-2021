@@ -1,4 +1,14 @@
 {
+<<<<<<< HEAD
+    "compilerOptions": {
+      "sourceMap": true,
+      "outDir": "dist",
+      "strict": true,
+      "lib": ["esnext"],
+      "esModuleInterop": true
+    }
+  }
+=======
   "compilerOptions": {
     "module": "commonjs",
     "allowJs": true,
@@ -33,3 +43,4 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
+>>>>>>> ebed19bd45be901eec43898ea0e732acf85d751e
