@@ -32,7 +32,7 @@
     "cors": "^2.8.5",
     "csurf": "^1.11.0",
     "dayjs": "^1.10.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-cluster": "^0.0.5",
     "express-mung": "^0.5.1",
     "express-rate-limit": "^5.2.6",
